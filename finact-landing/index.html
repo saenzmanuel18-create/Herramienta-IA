@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinAct - Inicio</title>
+    <meta name="description" content="Plataforma líder para el control y análisis financiero.">
+    <!-- Favicon link -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Moving Abstract Background -->
+    <div class="bg-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <svg width="24" height="24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 25 75 L 50 35 L 75 75" stroke="#3b82f6" stroke-width="12" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <circle cx="50" cy="55" r="10" fill="#8b5cf6" />
+            </svg>
+            Fin<span>Act</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="caracteristicas.html">Características</a></li>
+            <li><a href="analisis.html">Análisis</a></li>
+        </ul>
+        <a href="#" onclick="alert('Funcionalidad en desarrollo')" class="btn">Empezar</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-container hero">
+        <div class="hero-content">
+            <h1>Domina tu Patrimonio<br><span>Activos vs Pasivos</span></h1>
+            <p>La plataforma definitiva y minimalista que te permite visualizar, analizar y optimizar tus recursos
+                financieros. Toma decisiones inteligentes con claridad y precisión.</p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="analisis.html" class="btn">Ver Dashboard</a>
+                <a href="caracteristicas.html" class="btn"
+                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); box-shadow: none;">Explorar
+                    Funciones</a>
+            </div>
+        </div>
+        <div class="hero-graphic">
+            <div class="glass-card">
+                <!-- Canvas solo procesado si existe en el JS -->
+                <canvas id="heroChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FinAct - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinAct - Dashboard de Análisis</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="bg-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <svg width="24" height="24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 25 75 L 50 35 L 75 75" stroke="#3b82f6" stroke-width="12" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <circle cx="50" cy="55" r="10" fill="#8b5cf6" />
+            </svg>
+            Fin<span>Act</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="caracteristicas.html">Características</a></li>
+            <li><a href="analisis.html" class="active">Análisis</a></li>
+        </ul>
+        <a href="#" class="btn" style="background: rgba(255,255,255,0.1); box-shadow: none;">Exportar PDF</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-container">
+        <div class="page-header" style="margin-bottom: 3rem; text-align: left;">
+            <h1 style="font-size: 2.5rem;">Visualiza tu Realidad</h1>
+            <p style="margin: 0; max-width: 100%;">Entender la relación exacta entre lo que generas y lo que debes.</p>
+        </div>
+
+        <div class="dashboard-layout">
+
+            <!-- Contenedor Gráfica Principal -->
+            <div class="dashboard-card">
+                <div class="chart-wrapper">
+                    <!-- id requerido para JS -->
+                    <canvas id="balanceChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Panel Lateral Datos -->
+            <div class="dashboard-card info-card">
+                <h3>📊 Resumen Actual</h3>
+
+                <div class="stats-list">
+                    <div class="stat-item">
+                        <span class="stat-label">Total Activos</span>
+                        <span class="stat-value text-success">$124,500</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Total Pasivos</span>
+                        <span class="stat-value text-danger">$42,300</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="stat-item"
+                        style="background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3);">
+                        <span class="stat-label" style="color: var(--text-primary)">Patrimonio Neto</span>
+                        <span class="stat-value text-primary">$82,200</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2.5rem;">
+                    <h4 style="margin-bottom: 1rem; color: var(--text-secondary); font-weight: 500;">Estado de Salud
+                    </h4>
+                    <div
+                        style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden;">
+                        <div
+                            style="width: 74%; height: 100%; background: linear-gradient(90deg, var(--success-color), var(--primary-color));">
+                        </div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; text-align: right;">
+                        74% Ratio de Solvencia</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FinAct - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
