@@ -4,66 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinAct - Inicio</title>
-    <meta name="description" content="Plataforma líder para el control y análisis financiero.">
+    <title>Steven Saenz | Portafolio Personal</title>
+    <meta name="description"
+        content="Tarjeta de presentación y portafolio de Steven Saenz, Técnico en Plataforma y Aplicaciones.">
     <!-- Favicon link -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Moving Abstract Background -->
+    <!-- Background Animation -->
     <div class="bg-animation">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
         <div class="orb orb-3"></div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <a href="index.html" class="logo">
-            <svg width="24" height="24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 25 75 L 50 35 L 75 75" stroke="#3b82f6" stroke-width="12" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <circle cx="50" cy="55" r="10" fill="#8b5cf6" />
-            </svg>
-            Fin<span>Act</span>
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="caracteristicas.html">Características</a></li>
-            <li><a href="analisis.html">Análisis</a></li>
-        </ul>
-        <a href="#" onclick="alert('Funcionalidad en desarrollo')" class="btn">Empezar</a>
-    </nav>
+    <!-- Main Container -->
+    <main class="card-container">
+        <!-- Presentation Card -->
+        <article class="glass-card profile-card" id="profileCard">
 
-    <!-- Main Content -->
-    <main class="page-container hero">
-        <div class="hero-content">
-            <h1>Domina tu Patrimonio<br><span>Activos vs Pasivos</span></h1>
-            <p>La plataforma definitiva y minimalista que te permite visualizar, analizar y optimizar tus recursos
-                financieros. Toma decisiones inteligentes con claridad y precisión.</p>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="analisis.html" class="btn">Ver Dashboard</a>
-                <a href="caracteristicas.html" class="btn"
-                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); box-shadow: none;">Explorar
-                    Funciones</a>
+            <div class="card-header">
+                <div class="profile-image-container">
+                    <div class="profile-image">
+                        <img src="img/WhatsApp Image 2026-02-13 at 5.57.05 PM.jpeg" alt="Steven Saenz"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <div class="status-badge"></div>
+                </div>
+                <div class="header-text">
+                    <h1>Steven Saenz</h1>
+                    <h2>19 Años</h2>
+                    <p class="profession">Técnico en Plataforma y Aplicaciones</p>
+                </div>
             </div>
-        </div>
-        <div class="hero-graphic">
-            <div class="glass-card">
-                <!-- Canvas solo procesado si existe en el JS -->
-                <canvas id="heroChart"></canvas>
+
+            <div class="card-body">
+                <div class="about-section">
+                    <h3>Sobre mí</h3>
+                    <p>Soy un profesional apasionado por la tecnología en constante aprendizaje. Me especializo en la
+                        creación, diseño y documentación de soluciones digitales atractivas y funcionales.</p>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Habilidades y Conocimientos</h3>
+
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="skill-info">
+                                <h4>Programación y Código</h4>
+                                <p>Conocimientos básicos en desarrollo y lógica de programación.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-desktop"></i></div>
+                            <div class="skill-info">
+                                <h4>Diseño Web</h4>
+                                <p>Creación de interfaces minimalistas, modernas y responsivas.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-film"></i></div>
+                            <div class="skill-info">
+                                <h4>Edición de Video</h4>
+                                <p>Producción y montaje de contenido audiovisual dinámico.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-file-lines"></i></div>
+                            <div class="skill-info">
+                                <h4>Documentación</h4>
+                                <p>Redacción técnica clara, estructurada y organizada.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-language"></i></div>
+                            <div class="skill-info">
+                                <h4>Inglés Básico</h4>
+                                <p>Comprensión técnica y comunicación fundamental.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                            <div class="skill-info">
+                                <h4>Empirismo</h4>
+                                <p>Capacidad de aprendizaje continuo y resolución práctica por cuenta propia.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-comments"></i></div>
+                            <div class="skill-info">
+                                <h4>Comunicación</h4>
+                                <p>Expresión clara y efectiva de ideas a nivel técnico e interpersonal.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-ear-listen"></i></div>
+                            <div class="skill-info">
+                                <h4>Escucha Activa</h4>
+                                <p>Recepción atenta y comprensión profunda de requerimientos del entorno.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="skill-info">
+                                <h4>Organización y Eficiencia</h4>
+                                <p>Estructuración metódica de tareas para maximizar la productividad y el orden.</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-book-open"></i></div>
+                            <div class="skill-info">
+                                <h4>Amplitud Lingüística</h4>
+                                <p>Riqueza de vocabulario y facilidad verbal para articular conceptos de todo tipo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+            <div class="card-footer">
+                <h3>Contacto</h3>
+                <div class="social-links">
+                    <a href="mailto:saenzmanuel18@gmail.com" class="social-btn" title="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="#" class="social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/saenzmanuel18-create" target="_blank" class="social-btn"
+                        title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-btn" title="Portafolio"><i class="fa-solid fa-globe"></i></a>
+                </div>
+                <button class="btn primary-btn" id="resumeBtn">Descargar CV <i
+                        class="fa-solid fa-download"></i></button>
+            </div>
+
+        </article>
     </main>
-
-    <footer>
-        <p>&copy; 2026 FinAct - Todos los derechos reservados.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
