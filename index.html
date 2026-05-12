@@ -4,138 +4,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steven Saenz | Desarrollador & Especialista en Automatización</title>
-    
-    <!-- SEO & LinkedIn Optimization -->
-    <meta name="description" content="Desarrollador enfocado en soluciones escalables con Firebase, automatización n8n y Google Apps Script. Técnico en Plataforma y Aplicaciones.">
-    <meta property="og:title" content="Steven Saenz | Portafolio Profesional">
-    <meta property="og:description" content="Especialista en Automatización y Desarrollo Fullstack. Mira mis proyectos en GitHub.">
+    <title>Steven Saenz | Desarrollador Frontend Junior y Automatizaci&oacute;n</title>
+
+    <meta name="description" content="Portafolio profesional de Steven Saenz, desarrollador frontend junior enfocado en automatizaci&oacute;n, Firebase, n8n, Google Apps Script y soluciones web para procesos empresariales.">
+    <meta name="keywords" content="Steven Saenz, desarrollador frontend junior, automatizaci&oacute;n, Firebase, n8n, Google Apps Script, JavaScript, portafolio, Colombia">
+    <meta name="author" content="Steven Saenz">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://saenzmanuel18-create.github.io/">
+
+    <meta property="og:title" content="Steven Saenz | Desarrollador Frontend Junior">
+    <meta property="og:description" content="Automatizaci&oacute;n, Firebase, n8n, Google Apps Script y desarrollo web orientado a mejorar procesos. Disponible para oportunidades junior, pr&aacute;cticas y proyectos.">
     <meta property="og:image" content="img/WhatsApp Image 2026-02-13 at 5.57.05 PM.jpeg">
     <meta property="og:url" content="https://saenzmanuel18-create.github.io/">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="es_CO">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Steven Saenz | Desarrollador Frontend Junior">
+    <meta name="twitter:description" content="Portafolio profesional enfocado en desarrollo frontend, automatizaci&oacute;n y soluciones con Firebase, n8n y Google Apps Script.">
+    <meta name="twitter:image" content="img/WhatsApp Image 2026-02-13 at 5.57.05 PM.jpeg">
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Steven Saenz",
+        "jobTitle": "Desarrollador Frontend Junior",
+        "email": "mailto:saenzmanuel18@gmail.com",
+        "url": "https://saenzmanuel18-create.github.io/",
+        "image": "img/WhatsApp Image 2026-02-13 at 5.57.05 PM.jpeg",
+        "sameAs": [
+            "https://github.com/saenzmanuel18-create"
+        ],
+        "knowsAbout": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Firebase",
+            "n8n",
+            "Google Apps Script",
+            "Automatizacion de procesos"
+        ]
+    }
+    </script>
 </head>
 
 <body>
-    <!-- Background Elements -->
-    <div class="background-wrapper" aria-hidden="true">
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
-    </div>
-
-    <main class="bento-container" role="main">
-        <!-- Profile Section -->
-        <section class="bento-item profile-box" aria-labelledby="profile-title">
-            <div class="profile-content">
+    <main class="portfolio-shell" role="main">
+        <section class="hero" aria-labelledby="profile-title">
+            <div class="profile-card" data-tilt-card>
                 <div class="image-wrapper">
-                    <img src="img/WhatsApp Image 2026-02-13 at 5.57.05 PM.jpeg" alt="Fotografía de Steven Saenz">
-                    <div class="online-indicator" title="Disponible para nuevos proyectos"></div>
+                    <img src="img/WhatsApp Image 2026-02-13 at 5.57.05 PM.jpeg" alt="Fotograf&iacute;a de Steven Saenz">
+                    <span class="status-dot" title="Disponible para oportunidades"></span>
                 </div>
-                <div class="profile-info">
+
+                <div class="hero-copy">
+                    <p class="eyebrow">Disponible para oportunidades junior, pr&aacute;cticas y proyectos</p>
                     <h1 id="profile-title">Steven Saenz</h1>
-                    <p class="role">Desarrollador & Especialista en Automatización</p>
-                    <div class="badge">Técnico en Plataforma y Aplicaciones</div>
+                    <p class="role">Desarrollador Frontend Junior | Automatizaci&oacute;n con Firebase, n8n y Apps Script</p>
+                    <p class="intro">
+                        Construyo interfaces web claras y automatizaciones que reducen tareas repetitivas.
+                        Me enfoco en JavaScript, Firebase, Google Apps Script y flujos con n8n para convertir procesos manuales en soluciones digitales &uacute;tiles.
+                    </p>
+
+                    <div class="terminal-line" aria-label="Mensaje dinamico de perfil">
+                        <span class="terminal-prompt">$</span>
+                        <span id="typedText">iniciando perfil profesional...</span>
+                    </div>
+
+                    <div class="cta-row" aria-label="Acciones principales">
+                        <a href="mailto:saenzmanuel18@gmail.com?subject=Oportunidad%20laboral%20para%20Steven%20Saenz" class="primary-btn">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            Contactar
+                        </a>
+                        <a href="https://github.com/saenzmanuel18-create" target="_blank" rel="noopener noreferrer" class="secondary-btn">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            <aside class="availability-panel" aria-label="Resumen profesional">
+                <div>
+                    <span class="metric-label">Perfil</span>
+                    <strong>Frontend Junior</strong>
+                </div>
+                <div>
+                    <span class="metric-label">Enfoque</span>
+                    <strong>Automatizaci&oacute;n</strong>
+                </div>
+                <div>
+                    <span class="metric-label">Contacto</span>
+                    <strong>Respuesta por correo</strong>
+                </div>
+            </aside>
         </section>
 
-        <!-- About Section -->
-        <section class="bento-item about-box" aria-labelledby="about-title">
-            <h3 id="about-title"><i class="fa-solid fa-user-tie" aria-hidden="true"></i> Perfil Profesional</h3>
-            <p>Especialista en la creación de soluciones digitales eficientes. Combino el desarrollo frontend moderno con la potencia de **Firebase** y la automatización avanzada mediante **n8n** y **Google Apps Script** para optimizar procesos empresariales.</p>
-        </section>
+        <section class="content-grid">
+            <article class="panel profile-summary" aria-labelledby="about-title">
+                <h2 id="about-title"><i class="fa-solid fa-user-tie" aria-hidden="true"></i> Perfil para reclutadores</h2>
+                <p>
+                    T&eacute;cnico en Plataforma y Aplicaciones con inter&eacute;s en desarrollo web, automatizaci&oacute;n y herramientas de productividad.
+                    Busco aportar en equipos donde pueda construir interfaces, integrar servicios y documentar soluciones que ayuden a operar mejor.
+                </p>
+            </article>
 
-        <!-- Services / Problem Solving -->
-        <section class="bento-item services-box" aria-labelledby="services-title">
-            <h3 id="services-title"><i class="fa-solid fa-handshake" aria-hidden="true"></i> Servicios</h3>
-            <ul class="simple-list">
-                <li><i class="fa-solid fa-bolt"></i> Automatización de Procesos</li>
-                <li><i class="fa-solid fa-cloud"></i> Arquitectura Cloud (Firebase)</li>
-                <li><i class="fa-solid fa-laptop-code"></i> Desarrollo Web Fullstack</li>
-            </ul>
-        </section>
+            <article class="panel job-target" aria-labelledby="target-title">
+                <h2 id="target-title"><i class="fa-solid fa-bullseye" aria-hidden="true"></i> Roles objetivo</h2>
+                <ul class="check-list">
+                    <li>Desarrollador Frontend Junior</li>
+                    <li>Asistente de automatizaci&oacute;n / No-code</li>
+                    <li>Soporte t&eacute;cnico con enfoque en herramientas digitales</li>
+                    <li>Practicante o trainee de desarrollo web</li>
+                </ul>
+            </article>
 
-        <!-- Projects Section (GitHub Linked) -->
-        <section class="bento-item projects-box" aria-labelledby="projects-title">
-            <h3 id="projects-title"><i class="fa-solid fa-code-branch" aria-hidden="true"></i> Proyectos Destacados (GitHub)</h3>
-            <div class="project-grid-internal">
-                <a href="https://github.com/saenzmanuel18-create" target="_blank" class="project-card" aria-label="Ver proyecto App Bienestar en GitHub">
-                    <div class="project-header">
-                        <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
-                        <span>App Bienestar</span>
+            <article class="panel value-panel" aria-labelledby="value-title">
+                <h2 id="value-title"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> C&oacute;mo puedo aportar</h2>
+                <div class="value-list">
+                    <div>
+                        <strong>Automatizar procesos</strong>
+                        <p>Crear flujos con n8n, Apps Script y APIs para reducir trabajo manual.</p>
                     </div>
-                    <p>Seguimiento de hábitos con Firebase y UX optimizada.</p>
-                </a>
-                <a href="https://github.com/saenzmanuel18-create" target="_blank" class="project-card" aria-label="Ver proyecto Automation Hub en GitHub">
-                    <div class="project-header">
-                        <i class="fa-solid fa-robot" aria-hidden="true"></i>
-                        <span>Automation Hub</span>
+                    <div>
+                        <strong>Crear herramientas web</strong>
+                        <p>Desarrollar p&aacute;ginas, formularios, paneles y prototipos funcionales con HTML, CSS y JavaScript.</p>
                     </div>
-                    <p>Flujos de trabajo n8n para integración de APIs.</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="bento-item skills-box" aria-labelledby="skills-title">
-            <h3 id="skills-title"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Core Stack</h3>
-            <div class="tags-container">
-                <span class="tag"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5/CSS3</span>
-                <span class="tag"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span>
-                <span class="tag"><i class="fa-solid fa-fire" aria-hidden="true"></i> Firebase</span>
-                <span class="tag"><i class="fa-solid fa-gears" aria-hidden="true"></i> n8n</span>
-                <span class="tag"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Apps Script</span>
-            </div>
-        </section>
-
-        <!-- Learning Now -->
-        <section class="bento-item learning-box" aria-labelledby="learning-title">
-            <h3 id="learning-title"><i class="fa-solid fa-book-open-reader" aria-hidden="true"></i> Aprendiendo</h3>
-            <div class="learning-content">
-                <p>Profundizando en **Inteligencia Artificial** aplicada a flujos de trabajo autónomos.</p>
-            </div>
-        </section>
-
-        <!-- Certificates Gallery (Visual Block) -->
-        <section class="bento-item certs-box" aria-labelledby="certs-title">
-            <h3 id="certs-title"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Certificaciones</h3>
-            <div class="certs-gallery">
-                <!-- Certificado 1 -->
-                <a href="certificado_documentos/107_saenzmanuel18@gmail.com.pdf" target="_blank" class="cert-item" title="Ver Certificado">
-                    <div class="cert-icon"><i class="fa-solid fa-file-pdf"></i></div>
-                    <div class="cert-info">
-                        <span class="cert-name">Certificado Técnico</span>
-                        <span class="cert-view">Ver Documento <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    <div>
+                        <strong>Integrar datos y servicios</strong>
+                        <p>Conectar Firebase, formularios, hojas de c&aacute;lculo y servicios externos para centralizar informaci&oacute;n.</p>
                     </div>
-                </a>
-            </div>
-        </section>
+                </div>
+            </article>
 
-        <!-- Contact Section -->
-        <section class="bento-item contact-box" aria-labelledby="contact-title">
-            <h3 id="contact-title"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contacto</h3>
-            <div class="social-grid">
-                <a href="mailto:saenzmanuel18@gmail.com" class="social-link" title="Enviar Email">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-link" title="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/saenzmanuel18-create" target="_blank" class="social-link" title="GitHub">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                </a>
-            </div>
-        </section>
+            <article class="panel skills-panel" aria-labelledby="skills-title">
+                <h2 id="skills-title"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Stack t&eacute;cnico</h2>
+                <div class="skill-group">
+                    <span>Frontend</span>
+                    <div class="tags-container">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive design</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span>Automatizaci&oacute;n y datos</span>
+                    <div class="tags-container">
+                        <span class="tag">n8n</span>
+                        <span class="tag">Google Apps Script</span>
+                        <span class="tag">APIs</span>
+                        <span class="tag">Google Sheets</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span>Cloud y herramientas</span>
+                    <div class="tags-container">
+                        <span class="tag">Firebase</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Documentaci&oacute;n</span>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Action Section (Real Download) -->
-        <section class="bento-item action-box">
-            <a href="Steven_Saenz_CV.pdf" download="Steven_Saenz_CV.pdf" class="cta-btn" id="resumeBtn" aria-label="Descargar Hoja de Vida de Steven Saenz en PDF">
-                <span>Descargar Hoja de Vida</span>
-                <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
-            </a>
+            <article class="panel projects-panel" aria-labelledby="projects-title">
+                <h2 id="projects-title"><i class="fa-solid fa-code-branch" aria-hidden="true"></i> Proyectos y evidencias</h2>
+                <div class="project-grid">
+                    <a href="https://github.com/saenzmanuel18-create/Seguimiento-de-proyectos" target="_blank" rel="noopener noreferrer" class="project-card featured-project">
+                        <span class="project-type">Aplicaci&oacute;n web</span>
+                        <strong>Seguimiento de proyectos</strong>
+                        <p>Interfaz para organizar procesos, avances y equipos, pensada para mejorar la visibilidad del estado de cada proyecto.</p>
+                        <div class="project-tags" aria-label="Competencias aplicadas">
+                            <span>Gesti&oacute;n de procesos</span>
+                            <span>Interfaz web</span>
+                            <span>Productividad</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/saenzmanuel18-create/aplicaion-de-binestrar-personal-" target="_blank" rel="noopener noreferrer" class="project-card featured-project">
+                        <span class="project-type">Aplicaci&oacute;n m&oacute;vil</span>
+                        <strong>Bienestar personal</strong>
+                        <p>Aplicaci&oacute;n inspirada en bienestar personal para dispositivos Android, enfocada en acompa&ntilde;ar rutinas y seguimiento personal.</p>
+                        <div class="project-tags" aria-label="Competencias aplicadas">
+                            <span>Android</span>
+                            <span>UX m&oacute;vil</span>
+                            <span>Bienestar</span>
+                        </div>
+                    </a>
+
+                    <a href="#certificaciones" class="project-card evidence-card">
+                        <span class="project-type">Evidencias</span>
+                        <strong>Certificados y formaci&oacute;n</strong>
+                        <p>Documentos disponibles para respaldar conocimientos, cursos y formaci&oacute;n t&eacute;cnica.</p>
+                    </a>
+                </div>
+            </article>
+
+            <article class="panel certs-panel" id="certificaciones" aria-labelledby="certs-title">
+                <h2 id="certs-title"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Certificaciones</h2>
+                <details class="cert-accordion" open>
+                    <summary>
+                        <span>Documentos cargados</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </summary>
+
+                    <div class="cert-toolbar" aria-label="Controles de certificados">
+                        <span>1 certificado disponible</span>
+                        <div class="cert-controls">
+                            <button type="button" class="icon-btn" data-cert-prev aria-label="Ver certificado anterior">
+                                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="icon-btn" data-cert-next aria-label="Ver certificado siguiente">
+                                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cert-carousel" data-cert-carousel aria-label="Lista de certificados">
+                        <a href="certificado_documentos/107_saenzmanuel18@gmail.com.pdf" target="_blank" rel="noopener noreferrer" class="cert-card">
+                            <span class="cert-preview">
+                                <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                            </span>
+                            <span class="cert-content">
+                                <strong>Certificado t&eacute;cnico</strong>
+                                <small>PDF disponible para validaci&oacute;n acad&eacute;mica.</small>
+                            </span>
+                            <span class="cert-action">Ver PDF</span>
+                        </a>
+                    </div>
+                </details>
+            </article>
+
+            <article class="panel learning-panel" aria-labelledby="learning-title">
+                <h2 id="learning-title"><i class="fa-solid fa-book-open-reader" aria-hidden="true"></i> En aprendizaje</h2>
+                <p>
+                    Profundizando en inteligencia artificial aplicada a productividad, agentes de automatizaci&oacute;n,
+                    mejores pr&aacute;cticas de JavaScript y despliegue de proyectos web.
+                </p>
+            </article>
+
+            <article class="panel contact-panel" aria-labelledby="contact-title">
+                <h2 id="contact-title"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contacto profesional</h2>
+                <div class="contact-actions">
+                    <a href="mailto:saenzmanuel18@gmail.com" class="contact-link">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/saenzmanuel18-create" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:saenzmanuel18@gmail.com?subject=Solicitud%20de%20hoja%20de%20vida%20-%20Steven%20Saenz" class="contact-link">
+                        <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                        <span>Solicitar CV</span>
+                    </a>
+                    <button type="button" class="contact-link copy-email" data-copy-email="saenzmanuel18@gmail.com">
+                        <i class="fa-solid fa-copy" aria-hidden="true"></i>
+                        <span>Copiar email</span>
+                    </button>
+                </div>
+                <p class="note" id="copyStatus">Cuando tengas tu URL real de LinkedIn y tu CV en PDF, se pueden conectar aqu&iacute; para cerrar el perfil.</p>
+            </article>
         </section>
     </main>
 
